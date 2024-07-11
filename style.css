@@ -1,0 +1,113 @@
+body {
+    background-image: url('background.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center; 
+    margin: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: rgb(17, 13, 13);
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px; /* Reduced font size */
+    color: rgb(25, 17, 17);
+    margin: 10px auto;
+    width: 80%; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: calc(100vh - 300px); 
+}
+
+.circular-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    border: 3px solid white; 
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.intro {
+    background-color: #4CAF50; 
+}
+
+.experience {
+    background-color: #008CBA; 
+}
+
+.contact {
+    background-color: #f44336; 
+}
+
+.btn:hover {
+    opacity: 0.8; 
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: rgb(63, 56, 56);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+#introModal .modal-content {
+    background-color: #1898a8; 
+}
+
+#experienceModal .modal-content {
+    background-color: #4d5d91; 
+}
+
+#contactModal .modal-content {
+    background-color: #359067; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
